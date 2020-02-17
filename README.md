@@ -1,4 +1,4 @@
-# Email Automation
+# 🚀 Email Automation
 
 ```
 const credentials = {
