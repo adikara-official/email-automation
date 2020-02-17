@@ -1,11 +1,40 @@
 # 🚀 Email Automation
 
+## Usuage
+
+Install all the modules
+
+``` npm install ```
+
+## Configure Config.js
+
 ```
 const credentials = {
   user: "YOUR_EMAIL_ADDRESS,
   pass: "YOUR_PASSWORD"
 };
 ```
+
+## App.js
+
+```
+let recepients = [
+  {
+    email: "email@email.com",
+    message: "Hey Ali"
+  },
+  {
+    email: "email@email.com",
+    message: "Hey Abbas"
+  }
+]; // list of recepients
+
+email(recepients); // call method
+```
+
+## Run the app
+
+``` node app.js ```
 
 ## Response Data
 
