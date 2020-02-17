@@ -21,3 +21,7 @@ const credentials = {
 }
 
 ```
+
+References:
+
+[Bulk Mail](https://nodemailer.com/usage/bulk-mail/)
