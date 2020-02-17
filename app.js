@@ -2,11 +2,11 @@ var email = require("./index");
 
 let recepients = [
   {
-    email: "ali@mrroom.in",
+    email: "email@email.com",
     message: "Hey Ali"
   },
   {
-    email: "ask@mrroom.in",
+    email: "email@email.com",
     message: "Hey Abbas"
   }
 ];
