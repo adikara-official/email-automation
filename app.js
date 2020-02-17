@@ -1,6 +1,6 @@
 var email = require("./index");
 
-email([
+let recepients = [
   {
     email: "ali@mrroom.in",
     message: "Hey Ali"
@@ -9,4 +9,6 @@ email([
     email: "ask@mrroom.in",
     message: "Hey Abbas"
   }
-]);
+];
+
+email(recepients);

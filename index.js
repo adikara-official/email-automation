@@ -1,17 +1,19 @@
 var nodemailer = require("nodemailer");
+var credentials = require("./config");
+
 var transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "irizviali@gmail.com",
-    pass: "vintageVRT5$"
+    user: credentials.user,
+    pass: credentials.pass
   },
   maxConnections: 20,
   maxMessages: Infinity
 });
 
-send_mail = (message, recipient) => {
+send_mail = (message, recipient, from) => {
   const mailOptions = {
-    from: "irizviali@gmail.com", // sender address
+    from: credentials.user, // sender address
     to: recipient, // list of receivers
     subject: message, // Subject line
     html: `<h1>${message}</h1>` // plain text body
@@ -25,7 +27,7 @@ send_mail = (message, recipient) => {
 let count = 0;
 let receipents = [];
 
-main = (data, message) => {
+main = data => {
   receipents = data;
   while (count < receipents.length) {
     send_mail(receipents[count].message, receipents[count++].email);
